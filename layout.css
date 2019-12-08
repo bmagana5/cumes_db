@@ -22,7 +22,7 @@ body{
 
 .left {
     float:left;
-    width:5%;
+    width:25%;
     height:500px;
     padding:5px;
     background-color:#EAE7DC;
@@ -39,7 +39,7 @@ body{
 
 .right {
     float:right;
-    width:5%;
+    width:25%;
     height:500px;
     padding:5px;
 	padding:4px;
