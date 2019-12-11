@@ -62,7 +62,20 @@
   <body>
     <div id='wrapper' class='wrapper'>
       <h1>Class Lists</h1>
-      <form name='myForm' action='' id='myForm'>
+      <?php
+$sql = " teacher FROM admin WHERE School is  ";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br> Teachers: ". $row["teacher"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+?>
         <p>
             
         </p>

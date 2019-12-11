@@ -21,7 +21,7 @@
 			<p>
 			        <p>
           Actions: <br/>
-          <select name='myLocation'>
+          <select name='add options'>
             <option value=''>Choose option</option>
             <option value='Add referral'>Add referral</option>
             <option value='Add disipl'>Add Dislinary Note</option>
@@ -56,7 +56,21 @@
       <h1>Class Enrollment</h1>
       <form name='myForm' action='' id='myForm'>
         <p>
-            
+
+<?php
+$sql = "student_id, student_name, date_of_birth, parent FROM student WHERE teacher is mike tibald ";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<br> id: ". $row["student_id"]. " - Name: ". $row["student_name"]. "DOB" . $row["date_of_birth"] ."Parent" . $row["parent"] "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+?>
         </p>
       </form>
     </div>

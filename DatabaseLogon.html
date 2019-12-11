@@ -46,8 +46,8 @@
       <form name='myForm' action='' id='myForm'>
         <p>
         <form action="mysql.php" method="post">
-Username: <input type="text" name="user_id"><br/>
-Password: <input type="password" name="user_pass"><br/>
+Username: <input type="text" name="username"><br/>
+Password: <input type="password" name="password"><br/>
 <input type="submit" value="Login" name="Login">
 <input type="submit" value="Logout" name="Logout">
 </form>
@@ -55,5 +55,37 @@ Password: <input type="password" name="user_pass"><br/>
       </form>
     </div>
     <script>
+	
+	<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
+
+$servername = "localhost";
+$username = $_POST["username"];
+$password = $_POST["password"];
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+// Change page
+if ($_POST['login']) {
+	$_SESSION ["username"] == "brian" {
+	header(" Location: ../Datateach.html"
+	}
+	//	$_SESSION ["username"] ==  {
+	//header(" Location: ../DataAdmin.html"
+	}
+	
+}
+
+
+?>
 	
 	
