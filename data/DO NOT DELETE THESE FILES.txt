@@ -1,0 +1,2 @@
+These may be modified judiciously only if absolutely necessary. DO NOT DELETE these scripts; they help
+create .sql scripts that generate data for the database's tables.

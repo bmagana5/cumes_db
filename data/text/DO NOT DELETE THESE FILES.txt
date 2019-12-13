@@ -1,0 +1,2 @@
+These are needed for the C++ scripts one level outside of this folder to generate the .sql scripts for 
+creating data for the database's tables.

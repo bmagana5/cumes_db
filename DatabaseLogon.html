@@ -1,91 +1,44 @@
 <!doctype html>
 <html>
-	<head>
-	<script src='jquery.js'></script>
-		<title> SRDB Logon </title>
-		<Style>
-		
-		</style>
-		<link rel='stylesheet' type='text/css' href='layout.css'>
-		<link rel='stylesheet' type='text/css' href='text.css'>
-		<link rel='stylesheet' type='text/css' href='bootstrap.css'>
-	</head>
-			<div class= 'header'>
-			
-			<img class='logo' src='images/SRDBlogo.jpg' alt= 'center'>
-			
-			</header>
-			</div>
-		<body>
-		<div class='left'>
-			<p>
-			
-				
-			</p>
-		</div>
-		<div class='right'>
-		<p>
-		
-		</p>
-		</div>
-		<div class='footer'>
-		<p>
-			
-		</p>
-		</div>
-		<div class='content'>
-		<p>
-<br>
-			<h3></h3>
-			<!DOCTYPE html>
-    
-  </head>
-  <body>
-    <div id='wrapper' class='wrapper'>
-      <h1>Logon</h1>
-      <form name='myForm' action='' id='myForm'>
-        <p>
-        <form action="mysql.php" method="post">
-Username: <input type="text" name="username"><br/>
-Password: <input type="password" name="password"><br/>
-<input type="submit" value="Login" name="Login">
-<input type="submit" value="Logout" name="Logout">
-</form>
-        </p>
-      </form>
+    <head>
+        <script src='jquery.js'></script>
+        <title> SRDB Log In </title>
+        <link rel='stylesheet' type='text/css' href='layout.css'>
+        <link rel='stylesheet' type='text/css' href='text.css'>
+        <link rel='stylesheet' type='text/css' href='bootstrap.css'>
+    </head>
+    <div class= 'header'>
+
+        <img class='logo' src='images/SRDBlogo.jpg' alt= 'center'>
+
     </div>
-    <script>
-	
-	<?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-
-
-$servername = "localhost";
-$username = $_POST["username"];
-$password = $_POST["password"];
-
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
-// Change page
-if ($_POST['login']) {
-	$_SESSION ["username"] == "brian" {
-	header(" Location: ../Datateach.html"
-	}
-	//	$_SESSION ["username"] ==  {
-	//header(" Location: ../DataAdmin.html"
-	}
-	
-}
-
-
-?>
-	
-	
+    <body>
+        <div class='left'>
+            <p></p>
+        </div>
+        <div class='right'>
+            <p></p>
+        </div>
+        <div class='footer'>
+            <p>
+            </p>
+        </div>
+        <div class='content'>
+            <br>
+            <div id='wrapper' class='wrapper'>
+                <h1>Log In</h1>
+                <form action="mysql.php" method="post">
+                    <div class="row"> 
+                    Username: <input type="text" name="username"><br/>
+                    </div>
+                    <div class="row">
+                    Password: <input type="password" name="password"><br/>
+                    </div>
+                    <input type="submit" value="Login" name="Login">
+                    <input type="submit" value="Logout" name="Logout">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+            
