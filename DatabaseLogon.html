@@ -3,42 +3,50 @@
     <head>
         <script src='jquery.js'></script>
         <title> SRDB Log In </title>
-        <link rel='stylesheet' type='text/css' href='layout.css'>
+        <!-- <link rel='stylesheet' type='text/css' href='layout.css'> -->
         <link rel='stylesheet' type='text/css' href='text.css'>
-        <link rel='stylesheet' type='text/css' href='bootstrap.css'>
+        <link rel="stylesheet" type="text/css" href="css/w3.css">
+        <link rel="stylesheet" type="text/css" href="logon.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
-    <div class= 'header'>
-
-        <img class='logo' src='images/SRDBlogo.jpg' alt= 'center'>
-
-    </div>
     <body>
-        <div class='left'>
-            <p></p>
-        </div>
-        <div class='right'>
-            <p></p>
-        </div>
-        <div class='footer'>
-            <p>
-            </p>
-        </div>
-        <div class='content'>
+        <div class='container'>
+            <div class= 'header' style="text-align: center;">
+                <a href="DatabaseHome.html" aria-label="Homepage">
+                    <img class='image' src='images/SRDBlogo.jpg' alt="SRDB Logo">
+                </a>
+            </div>
             <br>
-            <div id='wrapper' class='wrapper'>
-                <h1>Log In</h1>
-                <form action="mysql.php" method="post">
-                    <div class="row"> 
-                    Username: <input type="text" name="username"><br/>
+            <h3 >Sign in to SRDB</h3>
+            <div id='wrapper' class='wrapper w3-panel w3-border w3-round-xlarge' 
+            style="border: 2px solid gray; padding: 30px; margin-right: 360px; margin-left: 360px;">
+                <form action="mysql.php" method="post" style="box-sizing: border-box; display: block;">
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend" style="margin-bottom:10px;">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Username</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Small" aria-describedBy="inputGroup-sizing-sm" name="username" style="margin-bottom:10px;"><br/>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                     Password: <input type="password" name="password"><br/>
+                    </div> -->
+                    <div class="input-group input-group-sm mb-3">
+                        <div class="input-group-prepend" style="margin-bottom:10px;">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
+                        </div>
+                        <input type="password" class="form-control" aria-label="Small" aria-describedBy="inputGroup-sizing-sm" name="password" style="margin-bottom:10px;">
                     </div>
-                    <input type="submit" value="Login" name="Login">
-                    <input type="submit" value="Logout" name="Logout">
+
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Sign In</button>
+                    <!-- <input type="submit" value="Login" name="Login"> -->
+                    <!-- <input type="submit" value="Logout" name="Logout"> -->
                 </form>
             </div>
         </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
             

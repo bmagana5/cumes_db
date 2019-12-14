@@ -1,3 +1,32 @@
-.navbar {
-	background-color: #000000;
+html > body {
+	margin: 80px;
+	background-image: url(https://thumbs.dreamstime.com/b/school-office-supplies-school-background-colored-pencils-pen-pains-paper-school-student-education-white-wooden-96980804.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navbar-inverse > .container > .navbar-header > a > span{
+	color: white;
+}
+
+.navbar-inverse > .container > .navbar-collapse > ul > li > a {
+	color: white;
+}
+
+.carousel-inner > .item > img {
+	width: 100%;
+	height: 100%;
+}
+
+.Carousel {
+	width: 80%;
+	height: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.jumbotron > h1 {
+	font-family: 'Inconsolata', monospace;
+	margin-left: auto;
+	margin-right: auto;
 }
