@@ -20,7 +20,7 @@
             <h3 >Sign in to SRDB</h3>
             <div id='wrapper' class='wrapper w3-panel w3-border w3-round-xlarge' 
             style="border: 2px solid gray; padding: 30px; margin-right: 360px; margin-left: 360px;">
-                <form action="mysql.php" method="post" style="box-sizing: border-box; display: block;">
+                <form action="connection.php" method="post" style="box-sizing: border-box; display: block;">
                     <div class="input-group input-group-sm mb-3">
                         <div class="input-group-prepend" style="margin-bottom:10px;">
                             <span class="input-group-text" id="inputGroup-sizing-sm">Username</span>
@@ -36,8 +36,8 @@
                         </div>
                         <input type="password" class="form-control" aria-label="Small" aria-describedBy="inputGroup-sizing-sm" name="password" style="margin-bottom:10px;">
                     </div>
-
-                    <button class="btn btn-primary btn-lg btn-block" type="submit">Sign In</button>
+                    <input class="btn btn-primary btn-lg btn-block" type="submit" name="Login" value="Sign In">
+                    
                     <!-- <input type="submit" value="Login" name="Login"> -->
                     <!-- <input type="submit" value="Logout" name="Logout"> -->
                 </form>

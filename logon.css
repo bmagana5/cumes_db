@@ -1,6 +1,6 @@
 html > body {
 	margin: 60px;
-	background-image: url(https://countrynavigator.com/wp-content/uploads/iStock-494617082.jpg);
+	background-image: url(school-background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -10,7 +10,6 @@ h3 {
 }
 .container > .header > a > .image {
 	/*display: block; */
-	margin-left:;
 	margin-left: auto; 
 	margin-right: auto; 
 	max-width: 30%;

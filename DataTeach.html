@@ -6,11 +6,11 @@
 		<style></style>
 		<link rel='stylesheet' type='text/css' href='layout.css'>
 		<link rel='stylesheet' type='text/css' href='text.css'>
-		<link rel='stylesheet' type='text/css' href='bootstrap.css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	</head>
 	<body>
-		<div class= 'header'>
-			<img class='logo' src='images/SRDBlogo.jpg' alt= 'center'>
+		<div class= 'header' style="text-align: center;">
+			<img class='logo' src='images/SRDBlogo.jpg' alt= 'SRDB Logo'>
 		</div>	
 		<div class='left'>
 			<p>
@@ -50,7 +50,7 @@
       		</div>
 		</p>
 		<!-- <?php
-			$sql = "SELECT st.student_id AS 'Student ID', st.student_name AS 'Student Name', st.date_of_birth AS 'DOB', st.parent AS 'Parent/Guardian', ce.grade AS 'Grade', sf.name AS 'Teacher' FROM student AS st INNER JOIN classenroll AS ce ON st.student_id=ce.student_id INNER JOIN class AS cl ON ce.class_id=cl.class_id INNER JOIN staff AS sf ON cl.teacher_id=sf.staff_id WHERE sf.name='Melisandra Labbati';
+			$sql = "call retrieveStudentInfo($teach_id)";
 
 			$result = $conn->query($sql);
 
@@ -64,5 +64,7 @@
 			}
 
 		?> -->
+		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
