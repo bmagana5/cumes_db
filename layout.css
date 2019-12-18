@@ -1,5 +1,4 @@
 html > body {
-	background-image: url(https://images.template.net/wp-content/uploads/2017/03/Gray-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -34,7 +33,6 @@ header {
 	text-align:center;
     width: auto;
     height: auto;
-	/*background-color:#129bd3;*/
 	border:1px;
 	margin:10px;
 }
@@ -54,14 +52,11 @@ thead, tfoot {
 tbody {
     background-color: white;
     color: #555;
+    overflow-y: auto;
+    height: 200px;
     font-family: "Inconsolata", monospace;
 }
 
-.logo{
-	height: 150px;
-	width: auto;
-    border-radius: 50%;
-}
 div.myImg {
     border:solid black 4px;
     border-radius:10px;
@@ -114,4 +109,8 @@ div.myImg p.desc {
     height: 200px;
     border: #129bd3;
 	background-color:#129bd3;
+}
+
+.container-fluid > div > .image {
+    border-radius: 50%;
 }

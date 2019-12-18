@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head></head>
-<title></title>
+<title>Functions</title>
 <body>
 	<?php
 		session_start();
@@ -9,10 +9,12 @@
 			static $connection;
 			$servername = "localhost";
 			$database = "schoolrecords";
-			
+			$username = "brian";
+			$password = "forskyrim01";
+
 			if (!isset($connection)) {
-				$connection = mysqli_connect($servername, $_SESSION['username'],
-								$_SESSION['password'], $database) or die(mysqli_connect_error());
+				$connection = mysqli_connect($servername, $username,
+								$password, $database) or die(mysqli_connect_error());
 			}
 			if ($connection === false){
 				echo "unable to connect to MySQL database<br>";

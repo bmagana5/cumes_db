@@ -1,6 +1,13 @@
-html > body {
+.signin {
 	margin: 60px;
 	background-image: url(school-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.signup {
+	margin: 60px;
+	background-image: url(school-globe.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -8,6 +15,7 @@ html > body {
 h3 {
 	color: white;
 }
+
 .container > .header > a > .image {
 	/*display: block; */
 	margin-left: auto; 
